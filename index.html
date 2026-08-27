@@ -15,12 +15,37 @@
   <ul>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
 </nav>
-  <header>
-    <h1>Confeitaria Doce Encanto</h1>
-    <p>Bolos e doces personalizados sob encomenda</p>
+  <header class="hero">
+    <div class="hero-text">
+      <span class="badge">Doces feitos com amor</span>
+      <h1>Confeitaria Doce Encanto</h1>
+      <p>Bolos e doces personalizados sob encomenda para celebrar cada momento especial.</p>
+
+      <div class="hero-actions">
+        <a href="#produtos" class="btn-primary">Ver produtos</a>
+        <a href="#contato" class="btn-secondary">Fazer orçamento</a>
+      </div>
+
+      <ul class="hero-stats">
+        <li><strong>+500</strong><span>eventos</span></li>
+        <li><strong>10+</strong><span>anos</span></li>
+        <li><strong>100%</strong><span>artesanal</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-label="Bolo artesanal destacado">
+      <div class="visual-card">
+        <img src="img/hero.png" alt="Bolo artesanal decorado">
+        <span class="floating floating-cake">🎂</span>
+        <span class="floating floating-sweet">🍰</span>
+        <span class="floating floating-heart">💖</span>
+      </div>
+    </div>
   </header>
 
   <section id="sobre">
@@ -31,9 +56,54 @@
   <section id="produtos">
     <h2>Nossos Produtos</h2>
     <div class="galeria">
-      <img src="img/bolo1.jpg" alt="Bolo personalizado">
-      <img src="img/doce1.jpg" alt="Doces finos">
-      <img src="img/bolo2.jpg" alt="Bolo temático">
+      <figure class="card-produto">
+        <img src="img/bolo espatula.jfif" alt="Bolo decorado profissional" class="animada imagem-1">
+        <figcaption>Bolos decorados</figcaption>
+      </figure>
+      <figure class="card-produto">
+        <img src="img/hadassa.jfif" alt="Bolos personalizados" class="animada imagem-2">
+        <figcaption>Bolos personalizados</figcaption>
+      </figure>
+      <figure class="card-produto">
+        <img src="img/doces finos.png" alt="Doces finos" class="animada imagem-3">
+        <figcaption>Doces finos</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="diferenciais">
+    <h2>Por que escolher a Doce Encanto?</h2>
+    <div class="cards-diferenciais">
+      <div class="card-diferencial">
+        <h3>Personalização</h3>
+        <p>Modelos exclusivos para festas, casamentos, aniversários e eventos especiais.</p>
+      </div>
+      <div class="card-diferencial">
+        <h3>Qualidade</h3>
+        <p>Ingredientes selecionados e acabamento impecável em cada receita.</p>
+      </div>
+      <div class="card-diferencial">
+        <h3>Entrega</h3>
+        <p>Atendimento cuidadoso e entrega com atenção para o seu momento especial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="cards-depoimentos">
+      <div class="depoimento">
+        <p>“O bolo ficou lindo e o sabor estava incrível. Todos elogiaram!”</p>
+        <span>— Mariana S.</span>
+      </div>
+      <div class="depoimento">
+        <p>“Atendimento impecável e acabamento maravilhoso. Vale cada detalhe.”</p>
+        <span>— Eduardo L.</span>
+      </div>
+      <div class="depoimento">
+        <p>“Fiz uma encomenda para festa infantil e ficou exatamente como imaginei.”</p>
+        <span>— Carla R.</span>
+      </div>
     </div>
   </section>
 
