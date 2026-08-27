@@ -1,0 +1,210 @@
+/* Estilo geral */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+  color: #5a3e2b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #f7c5a8;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #e89b6b;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  color: #5a3e2b;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #7a4b35;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #e89b6b;
+  margin-bottom: 20px;
+}
+
+/* Galeria de produtos */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e89b6b;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #e89b6b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #d77e4a;
+}
+
+/* Botão WhatsApp */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f7c5a8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #5a3e2b;
+}
+/* Animações suaves */
+button, .whatsapp-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover, .whatsapp-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Efeito de entrada nas imagens */
+.galeria img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.galeria img.aparecer {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria img {
+    width: 90%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  button, .whatsapp-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+/* Menu fixo */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e89b6b;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #5a3e2b;
+}
+
+/* Ajuste para não esconder o cabeçalho */
+header {
+  margin-top: 60px;
+}
